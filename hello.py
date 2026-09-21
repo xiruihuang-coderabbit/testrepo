@@ -10,6 +10,7 @@ def greet(name: str) -> str:
 
 
 def main() -> None:
+    """Parse the command-line name and print its greeting."""
     parser = argparse.ArgumentParser(description="Print a friendly greeting.")
     parser.add_argument("name", nargs="?", default="World")
     args = parser.parse_args()
